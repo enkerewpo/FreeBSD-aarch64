@@ -1,4 +1,4 @@
-qemu-system-aarch64 -m 4096M -cpu cortex-a72 -M virt  \
+qemu-system-aarch64 -m 4096M -cpu cortex-a72 -M virt -smp 4 \
         -bios u-boot/u-boot.bin \
         -serial mon:stdio -nographic \
         -drive if=none,file=FreeBSD-14.0-RELEASE-arm64-aarch64.qcow2,id=hd0 \
